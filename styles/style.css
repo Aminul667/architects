@@ -6,16 +6,30 @@
   font-family: "Work Sans", sans-serif;
   margin: 0;
 }
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
-.nav li{
-    list-style: none;
+.nav li {
+  list-style: none;
 }
 .section-title {
   color: #131313;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 45px;
+}
+
+.btn-primary {
+  padding: 25px 20px;
+  border: none;
+  background-color: #ff900e;
+  border-radius: 8px;
+}
+
+.btn-primary .link {
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /* common styles end */
@@ -23,34 +37,76 @@
 /* header styles start */
 .header {
   background-color: rgba(255, 144, 14, 0.1);
-  padding: 50px 240px 45px;
+  padding: 50px 175px 45px;
 }
 
 /* nav styles */
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav ul{
-    display: flex;
-    column-gap: 50px;
+.nav ul {
+  display: flex;
+  column-gap: 50px;
 }
+
+.nav a {
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* banner styles */
+.banner {
+  text-align: center;
+}
+.banner-info {
+  padding: 100px 350px 50px;
+}
+
+.banner-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.banner-description {
+  color: #727272;
+  margin-bottom: 32px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
 /* header styles end */
 
 /* responsive media queary */
-@media screen and (max-width:576px) {
-    .header{
-        padding: 5px;
-    }
-    .nav{
-        width: 100%;
-        flex-direction: column;
-    }
-    .nav ul{
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-    }
+/* Small devices */
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 5px;
+  }
+  .nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .banner-info {
+    /* text-align: center; */
+    padding: 10px 0;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
 }
